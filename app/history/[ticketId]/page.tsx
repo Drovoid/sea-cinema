@@ -14,6 +14,7 @@ interface ticketController {
   movie: {
     title: String;
     release_date: String;
+    poster_url: String;
   };
   createdAt: String;
 }
@@ -75,7 +76,7 @@ const TicketDetail = ({
         </div>
         <div className="grid grid-cols-12 mt-5">
           <div className="col-span-4">
-            <img src="/images/poster.jpg" className="w-full" alt="" />
+            <img src={ticket?.movie.poster_url} className="w-full" alt="" />
           </div>
           <div className="">&nbsp;</div>
           <div className="col-span-6 flex flex-col gap-4 lg:gap-4 text-lg">

@@ -14,7 +14,7 @@ interface ticketController {
   movie: {
     title: String;
     release_date: String;
-    poster_url: String;
+    poster_url: string;
   };
   createdAt: String;
 }
